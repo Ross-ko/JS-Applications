@@ -40,7 +40,7 @@ async function onRegister(event) {
     const userData = await response.json();
     localStorage.setItem("user", userData);
 
-    window.location = "/";
+    window.location = "index.html";
   } catch (error) {
     alert(error.message);
   }

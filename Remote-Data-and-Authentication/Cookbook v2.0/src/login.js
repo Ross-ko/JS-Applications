@@ -1,10 +1,10 @@
 window.addEventListener("load", start);
 
 function start() {
-  document.querySelector("form").addEventListener("submit", onRegister);
+  document.querySelector("form").addEventListener("submit", onLogin);
 }
 
-async function onRegister(event) {
+async function onLogin(event) {
   event.preventDefault();
 
   const formData = new FormData(event.target);
@@ -32,7 +32,7 @@ async function onRegister(event) {
     const userData = await response.json();
     localStorage.setItem("user", JSON.stringify(userData));
 
-    window.location = "/";
+    window.location = "index.html";
   } catch (error) {
     alert(error.message);
   }

@@ -44,7 +44,7 @@ async function onCreate(event) {
       throw new Error(error.message);
     }
 
-    window.location = "/";
+    window.location = "index.html";
   } catch (error) {
     alert(error.message);
   }
