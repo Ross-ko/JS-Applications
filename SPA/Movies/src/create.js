@@ -13,7 +13,7 @@ async function onPublish(event) {
 
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData.entries());
-debugger
+
   const title = data.title.trim();
   const img = data.img.trim();
   const description = data.description.trim();
